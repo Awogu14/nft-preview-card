@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-decoration-skip-ink: none;
+}
+
+body{
+  background-color: hsl(217, 54%, 11%);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Outfit", sans-serif;
+}
+.card{
+  background: hsl(216, 50%, 16%);;
+  height: 543px;
+  width: 330px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  border-radius: 15px;
+  margin: auto;
+}
+.picture{
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+.preview:hover .previewIco {
+  opacity: 1;
+}
+
+.preview:active .nft-image {
+  transform: scale(1.5);
+}
+
+.previewIco {
+  position: absolute;
+  background-color: hsl(178, 100%, 50%);
+  padding: 120px;
+  opacity: 0;
+}
+
+.previewIco {
+  height: 280px;
+  width: 280px;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.nft-image{
+  height: 280px;
+  width: 280px;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+.nft-name{
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+  font-size: 22px;
+}
+.nft-name a{
+  color: hsl(0, 0%, 100%);
+}
+
+.nft-name a:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+.description{
+  margin: auto;
+}
+.description p{
+  color: hsl(215, 51%, 70%);
+}
+.info {
+  display: flex;
+  padding: 0 0 17px;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  width: 150px;
+  gap: 8px;
+}
+
+.price h2 {
+  color: hsl(178, 100%, 50%);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.daysLeft {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 150px;
+  gap: 8px;
+}
+
+.daysLeft p {
+  color: hsl(215, 51%, 70%);
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-top: 0.1em solid hsl(215, 32%, 27%);
+}
+
+.author img {
+  width: 33px;
+  border: 0.1rem solid hsl(0, 0%, 100%);
+  border-radius: 100%;
+}
+
+.author p {
+  color: hsl(215, 51%, 70%);
+  font-size: 16px;
+  font-weight: 300;
+}
+.author p a {
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
+}
+
+.author a:hover {
+  color: hsl(178, 100%, 50%);
+}
